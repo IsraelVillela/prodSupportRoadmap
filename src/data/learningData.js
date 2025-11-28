@@ -113,10 +113,57 @@ export const resources = [
     url: "https://learning.postman.com/",
     type: "doc",
   },
+
+  // ✅ New Linux resources for Phase 0
+  {
+    id: "linux-journey",
+    title: "Linux Journey (beginner-friendly lessons)",
+    url: "https://linuxjourney.com/",
+    type: "course",
+  },
+  {
+    id: "overthewire-bandit",
+    title: "OverTheWire: Bandit (hands-on Linux wargame)",
+    url: "https://overthewire.org/wargames/bandit/",
+    type: "practice",
+  },
+  {
+    id: "linux-command-handbook",
+    title: "Linux Command Line Handbook",
+    url: "https://www.freecodecamp.org/news/the-linux-commands-handbook/",
+    type: "doc",
+  },
+
+  // ✅ New incident / ticket / RCA resources for Phase 4
+  {
+    id: "atlassian-incident-handbook",
+    title: "Atlassian Incident Management Handbook",
+    url: "https://www.atlassian.com/incident-management/handbook",
+    type: "doc",
+  },
+  {
+    id: "atlassian-major-incident",
+    title: "Major Incident Management (Atlassian)",
+    url: "https://www.atlassian.com/incident-management/itsm/major-incident-management",
+    type: "doc",
+  },
+  {
+    id: "bmc-incident-overview",
+    title: "ITIL Incident Management Overview (BMC)",
+    url: "https://docs.bmc.com/xwiki/bin/view/Service-Management/IT-Service-Management/BMC-Helix-ITSM-Service-Desk/servicedesk251/Getting-started/Key-concepts/Incident-Management-overview/",
+    type: "doc",
+  },
+  {
+    id: "smartsheet-rca",
+    title: "Smartsheet Root Cause Analysis Templates",
+    url: "https://www.smartsheet.com/free-root-cause-analysis-templates-complete-collection",
+    type: "doc",
+  },
 ];
 
+
 export const phases = [
-  {
+    {
     id: "phase-0",
     title: "Phase 0 — Foundations",
     timeframe: "2–4 weeks",
@@ -124,8 +171,9 @@ export const phases = [
     description:
       "Quick pass to make sure you're comfortable in a terminal and understand how the web works at a basic level.",
     skillIds: ["linux-basics", "http-basics"],
-    resourceIds: [],
+    resourceIds: ["linux-journey", "overthewire-bandit", "linux-command-handbook"],
   },
+
   {
     id: "phase-1",
     title: "Phase 1 — SQL for Production Support",
@@ -166,6 +214,11 @@ export const phases = [
     description:
       "Learn how to read logs, correlate metrics to issues, and write clear notes. This is where soft skills and technical skills meet.",
     skillIds: ["incident-comm", "root-cause"],
-    resourceIds: [],
+    resourceIds: [
+      "atlassian-incident-handbook",
+      "atlassian-major-incident",
+      "bmc-incident-overview",
+      "smartsheet-rca",
+    ],
   },
 ];
